@@ -17,11 +17,12 @@ LIBS :=
 ELF := $(BINDIR)/comm
 
 # Compiler
-CROSS_COMPILE ?= arm-linux-gnueabihf-
+CROSS_COMPILE ?= arm-xilinx-linux-gnueabi-
 CC := $(CROSS_COMPILE)gcc
 
 # Particular processor
-PROCESSOR = -static -static-libgcc
+PROCESSOR = 
+# -static -static-libgcc
 
 # Directories of used header files
 INCLUDE = -I$(INCDIR)
